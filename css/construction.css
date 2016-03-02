@@ -1,0 +1,55 @@
+html,body,div,a{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+	font-size: medium;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	vertical-align: baseline;
+	color: #a8b7c9;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: "PingFang SC",
+				 "Microsoft YaHei",
+				 "微软雅黑",
+				 STXihei,
+				 "华文细黑",
+				 sans-serif;
+	cursor: default;
+}
+
+#content{
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+#chinese {
+	padding-top: 1em;
+}
+
+#img {
+	top: 55%;
+	width: 100%;
+	position: absolute;
+	margin-top: 35px;
+	transition-duration: 0.3s;
+	transition-time-function: linear;
+	cursor: pointer;
+}
+
+#img:hover {
+	background-color: #4a4a4a;
+}
+
+#img:active {
+	background-color: #4a4a4a;
+}

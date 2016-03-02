@@ -1,0 +1,126 @@
+@media (max-width: 746px) {
+
+	.subtitle {
+		padding-left: 8%;
+	}
+
+	/* project & skill
+	   --------------------------*/
+	#project,
+	#skill {
+		position: relative;
+		width: 100%;
+	}
+
+	.pro-time {
+		width: 21%;
+		text-align: center;
+	}
+
+	.pro-name {
+		width: 65%;
+	}
+
+	.pro-box {
+		padding-left: 26.4%;
+	}
+
+	#skill { margin-left: 0; }
+
+	.skill { width: 100%; }
+	.skill-name { width: 26%;}
+
+	/* about
+	   --------------------------*/
+
+	.about-name { width: 24%; }
+	.about-content { width: 66%; }
+}
+
+
+/* change first block on middle size screen
+   ----------------------------------------------*/
+@media (max-width: 626px) {
+	.pro-box {
+		padding-left: 27.2%;
+	}
+
+	.title,
+	#first-block {
+		position: relative;
+		/*width: 100%;*/
+	}
+
+	#introduce,
+	#infos { width: 100%; }
+
+	#introduce #name,
+	#introduce #describe {
+		text-align: center;
+	}
+
+	.info {
+		position: relative;
+		left: -15%;
+	}
+
+	#introduce {
+		padding-bottom: 1em;
+		border-bottom: solid 2px #979797;
+	}
+
+	#infos { padding-top: 1em; }
+}
+
+
+/* change first block on small size screen
+   ----------------------------------------------*/
+@media (max-width: 446px) {
+
+	/* font-size --------------------*/
+	#name { font-size: 2.3em; }
+	.info-name,
+	#introduce > div { font-size: 0.925em; }
+	.info-detail { font-size: 0.8em; }
+	.subtitle { font-size: 1.1em; }
+	.pro-time,
+	.pro-name { font-size: 0.925em; }
+	.duty,
+	.items > div { font-size: 0.8em; }
+	.skill-name,
+	.level { font-size: 0.78em; }
+	.about-name,
+	.about-content { font-size: 0.75em; }
+
+	/* width & height ---------------*/
+	.info { width: 14em; }
+	.pro-time {
+		padding-left: 0;
+		/*margin-right: 0;*/
+		width: 15%;
+	}
+	.pro-name { padding-left: 1%; }
+	.dot {
+		width: 0.8em;
+		height: 0.8em;
+	}
+
+	.skill-name { width: 20%; }
+	.level { width: 77%; }
+	.duty,
+	.items > div {
+		padding-left: 4%;
+	}
+	#about-items {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0.2em;
+	}
+	.about-name {
+		width: 20%;
+		margin-right: 0.5em;
+	}
+	.about-content { width: 72%; }
+}
+
+

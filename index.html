@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
+	<meta name="author" content="Shen Ji">
+	<title>几 何</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon_o.png">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="resume/resume.css">
+	<link rel="stylesheet" type="text/css" href="resume/resume-screen.css">
+	<link rel="stylesheet" type="text/css" href="resume/resume-screen-details.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css" media="screen">
+		#resume { display: none; }
+	</style>
+
+	<!-- Baidu Analytic Code  -->
+	<!-- <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?****************************";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script> -->
+</head>
+
+<body>
+<div id="container">
+	<div id="bg">
+		<div id="main">
+
+			<div id="plug-in">
+				<canvas id="cas"></canvas>
+
+				<div id="music-panel">
+					<div id="music-control" class></div>
+
+					<iframe id="music-player" frameborder="no" border="0" marginwidth="0" marginheight="0" src="https://music.163.com/outchain/player?type=0&id=308210159&auto=0&height=430"></iframe>
+				</div> <!-- /music-panel -->
+
+				<div id="toggle-img" class>
+					<div id="toggle_o">
+						<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+						    <title>50 * 50 Oran-Full svg</title>
+						    <desc>Created with Sketch.</desc>
+						    <defs></defs>
+						    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+						        <g id="50-*-50-Oran-Full-svg" sketch:type="MSArtboardGroup">
+						            <image id="50-*-50-Oran-Full" sketch:type="MSBitmapLayer" x="0" y="0" width="50" height="50" xlink:href="data:image/png;base64,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"></image>
+						        </g>
+						    </g>
+						</svg>
+					</div> <!-- /toggle_o -->
+
+					<div id="toggle_x" class="clicked">
+						<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+						    <title>50 * 50 Oran-Full-B&amp;W svg</title>
+						    <desc>Created with Sketch.</desc>
+						    <defs></defs>
+						    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+						        <g id="50-*-50-Oran-Full-B&amp;W-svg" sketch:type="MSArtboardGroup">
+						            <image id="50-*-50-Oran-Full-B&amp;W" sketch:type="MSBitmapLayer" x="0" y="0" width="50" height="50" xlink:href="data:image/png;base64,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"></image>
+						        </g>
+						    </g>
+						</svg>
+					</div> <!-- /toggle_x -->
+				</div> <!-- /toggle-img -->
+			</div> <!-- /plug-in -->
+
+			<header id="header">
+				<div>几 何</div>
+				<p id="subscribe">对码当歌，人生几何？</p>
+				<ul id="icons">
+					<li class="icon">
+						<a href="https://***.me/blog/" target="_blank">
+							<div id="blog"></div>
+						</a>
+					</li><!-- /blog -->
+					<li class="icon">
+						<a href="https://github.com/James0112" target="_blank">
+							<div id="github"></div>
+						</a>
+					</li><!-- /github -->
+					<li class="icon">
+						<a href="http://weibo.com/1930296291" target="_blank">
+							<div id="weibo"></div>
+						</a>
+					</li><!-- /weibo -->
+					<li class="icon">
+						<a href="https://www.zhihu.com/people/_Orange" target="_blank">
+							<div id="zhihu"></div>
+						</a>
+					</li><!-- /zhihu -->
+					<li class="icon">
+						<a href="tencent://message/?uin=809445400&Site=qq&Menu=yes" target="_blank">
+							<div id="qq"></div>
+						</a>
+					</li><!-- /qq -->
+				</ul>
+			</header> <!-- /header -->
+
+			<div id="resume">
+				<div id="content">
+					<div id="first-block">
+						<section class="title" id="introduce">
+							<div id="name">James</div>
+							<div id="describe">Front-end Developer</div>
+						</section>
+						<section class="title" id="infos">
+							<div id="info-1" class="info">
+								<div class="info-name">Web </div>
+								<div class="info-detail">https://***.me/resume</div>
+							</div>
+							<div id="info-2" class="info">
+								<div class="info-name"> Email</div>
+								<div class="info-detail">**********@hotmail.com</div>
+							</div>
+							<div id="info-3" class="info">
+								<div class="info-name">Phone</div>
+								<div class="info-detail">**********</div>
+							</div>
+						</section>
+					</div> <!-- /first-block -->
+
+					<div id="second-block">
+						<section id="project">
+							<div class="subtitle">项目经验</div>
+							<div class="pro">
+								<div class="pro-title">
+									<div class="pro-time"></div>
+									<div class="pro-name">
+									</div>
+								</div>
+								<div class="pro-box">
+									<div class="pro-name">
+									</div>
+									<div class="duty">
+									</div>
+									<div class="items">
+										<div></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="pro">
+								<div class="pro-title">
+									<div class="pro-time">2016 春</div>
+									<div class="dot"></div>
+									<div class="pro-name">
+										个人主页
+									</div>
+								</div>
+								<div class="pro-box">
+									<div class="duty">
+										开发者、设计者 | <em>https://***.me</em>
+									</div>
+									<div class="items">
+										<div>屏幕自适应</div>
+										<div>修改 div 宽高实现图标抖动旋转</div>
+										<div>CSS3 实现背景图动画轮播 (safari & chrome)</div>
+										<div>DIV + CSS 网页简历</div>
+										<div>
+											------
+										</div>
+										<div>CDN 加速</div>
+										<div>SSL （TLS 1.2）部署 + http/2 应用</div>
+										<div>服务器启用 GZip 压缩</div>
+										<div>使用 sketch 完成设计</div>
+										<div></div>
+									</div>
+								</div>
+							</div> <!-- /project_3 -->
+
+							<div class="pro">
+								<div class="pro-title">
+									<div class="pro-time">2016 初</div>
+									<div class="dot"></div>
+									<div class="pro-name">
+										个人独立博客
+									</div>
+								</div>
+								<div class="pro-box">
+									<div class="duty">
+										自主搭建、作者 | <em>https://***.me/blog </em>
+									</div>
+									<div class="items">
+										<div>个人记录并分享写下的一切</div>
+										<div></div>
+									</div>
+								</div>
+							</div> <!-- /project_2 -->
+
+							<div class="pro">
+								<div class="pro-title">
+									<div class="pro-time">2015 冬</div>
+									<div class="dot"></div>
+									<div class="pro-name">
+										泰红工厂网站
+									</div>
+								</div>
+								<div class="pro-box">
+									<div class="duty">
+										开发者 | <em>https://james0112.github.io/taihong </em>
+									</div>
+									<div class="items">
+										<div>响应式布局，屏幕自适应</div>
+										<div>使用无序列表实现顶部、侧边导航</div>
+										<div>jQuery 取得 id 实现网页区域滑动效果</div>
+										<div>CSS 设置 div 边框实现侧边导航开关</div>
+										<div></div>
+									</div>
+								</div>
+							</div><!-- /project_1 -->
+						</section>
+
+						<section id="skill">
+							<div class="subtitle">技能</div>
+							<div class="skill-first-box">
+								<div class="skill">
+									<div class="skill-name">HTML</div>
+									<div id="html" class="level"><div>7/10</div></div>
+								</div>
+								<div class="skill">
+									<div class="skill-name">CSS</div>
+									<div id="css" class="level"><div>6/10</div></div>
+								</div>
+								<div class="skill">
+									<div class="skill-name">jQuery</div>
+									<div id="jquery" class="level"><div>5/10</div></div>
+								</div>
+								<div class="skill">
+									<div class="skill-name">Javascript</div>
+									<div id="javascript" class="level"><div>3/10</div></div>
+								</div>
+							</div>
+							<div class="skill-second-box">
+								<div class="skill">
+									<div class="skill-name">Vim</div>
+									<div id="vim" class="level"><div>7/10</div></div>
+								</div>
+								<div class="skill">
+									<div class="skill-name">Shell</div>
+									<div id="shell" class="level"><div>6/10</div></div>
+								</div>
+								<div class="skill">
+									<div class="skill-name">Swift</div>
+									<div id="swift" class="level"><div>3/10</div></div>
+								</div>
+							</div>
+						</section> <!-- /skill -->
+
+						<section id="about">
+							<div class="subtitle">关于我</div>
+							<div id="about-items">
+								<div class="item">
+									<div class="about-name">出生日期</div>
+									<div class="about-content">**/**/****</div>
+								</div>
+								<div class="item">
+									<div class="about-name">毕业院校</div>
+									<div class="about-content">****大学</div>
+								</div>
+								<div class="item">
+									<div class="about-name">住址</div>
+									<div class="about-content">广东省**市**区***镇</div>
+								</div>
+								<div class="item">
+									<div class="about-name">其它方向</div>
+									<div class="about-content">部分 iOS 项目开发经验</div>
+								</div>
+							</div>
+						</section> <!-- /about -->
+					</div> <!-- /second-block -->
+				</div> <!-- /content -->
+			</div> <!-- /resume -->
+
+			<footer id="footer">
+				<span>譬如朝露，去日苦多。</span>
+			</footer>
+		</div><!-- /main -->
+	</div>  <!-- /background -->
+
+	<div id="disqus-comments">
+		<div id="disqus_thread"></div>
+		<script>
+			/**
+			* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+			*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+
+			s.src = '//*shortcutName*.disqus.com/embed.js';
+
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</div> <!-- /disqus-comments -->
+</div> <!-- /container -->
+
+<script src="js/min/jquery-2.2.0.min.js"></script>
+<script src="js/base.js"></script>
+<script id="dsq-count-scr" src="//*shortcutName*.disqus.com/count.js" async></script>
+
+<!-- <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-********-#', 'auto');
+    ga('send', 'pageview');
+</script> --> <!-- /Google Analytic Code -->
+
+<!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_**********'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D*********' type='text/javascript'%3E%3C/script%3E"));
+</script> --> <!-- /CNZZ Analytic Code -->
+
+</body>
+</html>

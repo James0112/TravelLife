@@ -1,0 +1,165 @@
+/* small change for pro-boxs' size
+   -----------------------------------------------*/
+@media (max-width: 800px) {
+	.pro-box {
+		padding-left: 22%;
+	}
+}
+
+@media (max-width: 780px) {
+	.pro-box {
+		padding-left: 22.2%;
+	}
+}
+
+@media (max-width: 760px) {
+	.pro-box {
+		padding-left: 22.4%;
+	}
+}
+
+/* continue change "project --> pro-boxs' size"
+   ----------------------------------------------"*/
+@media (max-width: 726px) {
+	.pro-box {
+		padding-left: 26.5%;
+	}
+}
+
+@media (max-width: 706px) {
+	.pro-box {
+		padding-left: 26.7%;
+	}
+}
+
+@media (max-width: 686px) {
+	.pro-box {
+		padding-left: 26.8%;
+	}
+}
+
+@media (max-width: 666px) {
+	.pro-box {
+		padding-left: 27%;
+	}
+}
+
+@media (max-width: 646px) {
+	.pro-box {
+		padding-left: 27.1%;
+	}
+}
+
+@media (max-width: 606px) {
+	.pro-box {
+		padding-left: 27.3%;
+	}
+}
+
+@media (max-width: 586px) {
+	.pro-box {
+		padding-left: 27.5%;
+	}
+}
+
+@media (max-width: 566px) {
+	.pro-box {
+		padding-left: 27.6%;
+	}
+}
+
+/* add the change of info in first-block
+   ----------------------------------------------*/
+@media (max-width: 546px) {
+	.pro-box {
+		padding-left: 27.8%;
+	}
+	.info { left: -14%; }
+}
+
+@media (max-width: 526px) {
+	.pro-box {
+		padding-left: 28.1%;
+	}
+	.info { left: -12%; }
+}
+
+@media (max-width: 506px) {
+	.pro-box {
+		padding-left: 28.3%;
+	}
+	.info { left: -10%; }
+}
+
+@media (max-width: 486px) {
+	.pro-box {
+		padding-left: 28.5%;
+	}
+	.info { left: -9%; }
+}
+
+@media (max-width: 466px) {
+	.pro-box {
+		padding-left: 28.8%;
+	}
+	.info { left: -8%; }
+}
+
+@media (max-width: 446px) {
+	.pro-box {
+		padding-left: 18%;
+	}
+	.info {
+		left: -19%;
+	}
+}
+
+@media (max-width: 426px) {
+	.pro-box {
+		/*padding-left: 29.2%;*/
+	}
+	.info { left: -17%; }
+}
+
+@media (max-width: 406px) {
+	.pro-box {
+		padding-left: 18.2%;
+	}
+	.info { left: -16%; }
+
+	.pro-time {
+		font-size: 0.725em;
+		padding-top: 0.25em;
+	}
+}
+
+@media (max-width: 386px) {
+	.pro-box {
+		padding-left: 18.3%;
+	}
+	.info { left: -14%; }
+}
+
+@media (max-width: 366px) {
+	.pro-box {
+		padding-left: 18.3%;
+	}
+	.info { left: -12%; }
+}
+
+@media (max-width: 346px) {
+	.pro-box {
+		padding-left: 18.9%;
+	}
+	.pro-time {
+		width: 15.5%;
+	}
+	.info { left: -10%; }
+}
+
+@media (max-width: 326px) {
+	.pro-box {
+		padding-left: 19%;
+	}
+	.info { left: -8%; }
+}
