@@ -1,15 +1,17 @@
 ## 使用前必读：
 需更改内容位置(如果真有人想用的话)：
-1.index.html 顶部百度分析代码；
-2.index.html 底部CNZZ、GA统计代码；
-3.index.html & resume/index.html 内简历内容；
-4.index.html GA 上方 disqus 评论代码 shortName 部分替换，有两处；
-5.index.html 第 81 行blog链接代码；
-6.index.html 第 42 行网易云音乐外链代码。
+
+1. index.html 顶部百度分析代码；
+2. index.html 底部CNZZ、GA统计代码；
+3. index.html & resume/index.html 内简历内容；
+4. index.html GA 上方 disqus 评论代码 shortName 部分替换，有两处；
+5. index.html 第 81 行blog链接代码；
+6. index.html 第 42 行网易云音乐外链代码。
 
 ### 建议修改：
-1./images/favicon_o.png, blog.png, blog-full.png, toggle_o.png, toggle_x.png；
-2./images/bg 所有图片(原图经过模糊处理)。
+
+1. /images/favicon_o.png, blog.png, blog-full.png, toggle_o.png, toggle_x.png；<br>
+2. /images/bg 所有图片(原图经过模糊处理)。
 
 ---
 
@@ -17,7 +19,7 @@
 
 这是第一次独立设计个人主页，借鉴了[麦田](http://itmyhome.com)这位博主的排版，然后根据自己的需求作的修改；名称没有想太多，就以旅行的背景图取意，叫作旅行人生。
 
-虽然代码量不多，但还是选择开源出来[Github/TravelLife]()，希望多交流；除了简历部分之外，必须修改的地方不算很多，用上也不是难事。
+虽然代码量不多，但还是选择开源出来[Github/TravelLife](https://github.com/James0112/TravelLife)，希望多交流；除了简历部分之外，必须修改的地方不算很多，用上也不是难事。
 
 ## About
 
